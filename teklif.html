@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teklif Al | Ana Sofrası Ev Yemekleri & Catering</title>
+    <meta name="description" content="Ana Sofrası'ndan kurumsal yemek, ofis ve okul yemekleri için catering teklifi alın.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/905077126447?text=Merhaba,%20Ana%20Sofrası%20Catering%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="floating-whatsapp" aria-label="WhatsApp ile İletişim">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-container">
+                <img src="images/logo.png" alt="Ana Sofrası Logo" class="logo-img" onerror="this.style.display='none';">
+                <span class="logo-text">Ana Sofrası</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="teklif.html" class="active">Teklif Al</a>
+            </div>
+            
+            <div class="nav-cta">
+                <a href="https://wa.me/905077126447?text=Merhaba,%20Ana%20Sofrası%20Catering%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-outline-gold">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+            
+            <div class="hamburger" id="hamburgerBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="teklif.html">Teklif Al</a>
+        <a href="https://wa.me/905077126447?text=Merhaba,%20Ana%20Sofrası%20Catering%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-gold btn-block">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+
+    <!-- Küçük Hero -->
+    <header class="small-hero">
+        <div class="container">
+            <h1>Teklif Alın</h1>
+            <p>Kişi sayısı ve lokasyon bilgilerinizi iletin, size en uygun yemek hizmeti için WhatsApp üzerinden dönüş sağlayalım.</p>
+        </div>
+    </header>
+
+    <!-- İki Kolonlu Yapı -->
+    <section class="section section-bg">
+        <div class="container offer-grid">
+            
+            <!-- Sol: Teklif Formu -->
+            <div class="offer-form-wrapper">
+                <h3 style="margin-bottom: 25px; font-family: var(--font-body); color: var(--bordo);">Teklif Formu</h3>
+                <form id="teklifForm">
+                    <div class="form-group">
+                        <input type="text" id="t_name" class="form-input" placeholder="Ad Soyad" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="t_company" class="form-input" placeholder="Firma / Kurum Adı" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="t_phone" class="form-input" placeholder="Telefon Numarası" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="number" id="t_people" class="form-input" placeholder="Kişi Sayısı" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="t_location" class="form-input" placeholder="Lokasyon (Örn: Bayrampaşa)" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="t_message" class="form-input" placeholder="Eklemek istediğiniz mesaj veya detaylar..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gold btn-block" style="padding: 16px;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Üzerinden Teklif İste
+                    </button>
+                </form>
+            </div>
+
+            <!-- Sağ: İletişim Kartları -->
+            <div class="contact-cards-wrapper">
+                <div class="contact-info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h5>Telefon</h5>
+                        <a href="tel:05077126447">0507 712 64 47</a>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h5>E-posta</h5>
+                        <a href="mailto:anamantigozleme@gmail.com">anamantigozleme@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h5>Çalışma Saatleri</h5>
+                        <p>08:00 - 18:00</p>
+                        <div class="info-chips">Pazartesi - Cumartesi</div>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h5>Hizmet Bölgeleri</h5>
+                        <p>İstanbul Avrupa Yakası</p>
+                        <div class="info-chips">Bayrampaşa, Eyüpsultan, Gaziosmanpaşa, Topkapı, Zeytinburnu, Bakırköy, Taksim, Beyoğlu</div>
+                    </div>
+                </div>
+                
+                <a href="https://wa.me/905077126447?text=Merhaba,%20Ana%20Sofrası%20Catering%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-outline-gold btn-block" style="margin-top: 10px; padding: 16px;">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Hızlı İletişim
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Mini Bilgi Kartları -->
+    <section class="section" style="background-color: var(--cream); padding-top: 0;">
+        <div class="container mini-info-grid">
+            <div class="mini-info-card">
+                <i class="fas fa-calculator"></i>
+                <p>Fiyatlandırma kişi sayısına ve lokasyona göre özel olarak yapılır.</p>
+            </div>
+            <div class="mini-info-card">
+                <i class="fab fa-whatsapp"></i>
+                <p>Taleplerinize WhatsApp üzerinden en kısa sürede hızlı dönüş sağlanır.</p>
+            </div>
+            <div class="mini-info-card">
+                <i class="fas fa-industry"></i>
+                <p>Tesisimizin günlük taze ev yemeği üretim kapasitesi 1000 kişidir.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimal Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">Ana Sofrası</span>
+                    <p>1997'den beri kurumsal firmalara, ofislere ve okullara ev yemeği sıcaklığını taşıyoruz.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>İletişim Bilgileri</h4>
+                    <ul class="footer-list">
+                        <li><i class="fas fa-phone-alt"></i> 0507 712 64 47</li>
+                        <li><i class="fas fa-envelope"></i> anamantigozleme@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Pzt - Cts: 08:00 - 18:00</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Hızlı Menü</h4>
+                    <ul class="footer-list footer-links">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="teklif.html">Teklif Al</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Ana Sofrası Ev Yemekleri & Catering. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
