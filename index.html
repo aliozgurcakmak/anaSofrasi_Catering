@@ -34,8 +34,7 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo-container">
-                <img src="images/logo.png" alt="Ana Sofrası Logo" style="height: 72px; object-fit: contain;"
-                    onerror="this.style.display='none';">
+                <img src="images/logo.png" alt="Ana Sofrası Logo" class="logo-img" onerror="this.style.display='none';">
                 <span class="logo-text">Ana Sofrası</span>
             </a>
 
@@ -168,16 +167,20 @@
 
     <!-- Hizmet Bölgeleri + Referanslar -->
     <section class="section section-bg">
-        <div class="container regions-refs-grid">
+        <div class="container regions-refs-grid" style="display: flex; justify-content: center;">
 
-            <!-- Sol: Hizmet Bölgeleri -->
-            <div class="regions-col">
+            <div class="regions-col" style="max-width: 900px; width: 100%; text-align: center;">
+
                 <span class="section-subtitle">Lokasyonlar</span>
                 <h2 class="section-title">Hizmet Bölgeleri</h2>
-                <p style="color: var(--text-muted); font-size: 0.95rem;">Sıcak ve zamanında teslimat için İstanbul
-                    Avrupa yakasında aşağıdaki bölgelere aktif hizmet vermekteyiz.</p>
 
-                <div class="chips-container">
+                <p style="color: var(--text-muted); font-size: 0.95rem;">
+                    Sıcak ve zamanında teslimat için İstanbul Avrupa yakasında aşağıdaki bölgelere aktif hizmet
+                    vermekteyiz.
+                </p>
+
+                <div class="chips-container" style="justify-content: center;">
+
                     <span class="chip">Bayrampaşa</span>
                     <span class="chip">Eyüpsultan</span>
                     <span class="chip">Gaziosmanpaşa</span>
@@ -186,33 +189,9 @@
                     <span class="chip">Bakırköy</span>
                     <span class="chip">Taksim</span>
                     <span class="chip">Beyoğlu</span>
+
                 </div>
             </div>
-
-            <!-- Sağ: Referanslar -->
-            <div class="refs-col">
-                <span class="section-subtitle">Güvenenler</span>
-                <h2 class="section-title">Referanslar</h2>
-
-                <div class="refs-container">
-                    <div class="ref-card">
-                        <img src="images/ref1.png" alt="Köşkeroğlu Baklava"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="ref-text-fallback" style="display:none;">Köşkeroğlu Baklava</span>
-                    </div>
-                    <div class="ref-card">
-                        <img src="images/ref2.png" alt="Memsa Makina"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="ref-text-fallback" style="display:none;">Memsa Makina</span>
-                    </div>
-                    <div class="ref-card">
-                        <img src="images/ref3.png" alt="Nedo Collection"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="ref-text-fallback" style="display:none;">Nedo Collection</span>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
