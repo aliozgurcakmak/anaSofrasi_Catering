@@ -56,7 +56,7 @@ h5,
 h6 {
     font-family: var(--font-heading);
     color: var(--bordo);
-    font-weight: 700;
+    font-weight: 800;
 }
 
 a {
@@ -291,6 +291,29 @@ img {
     background-color: #1ebd5a;
 }
 
+.floating-instagram {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background: linear-gradient(135deg, #833AB4 0%, #E1306C 50%, #FCAF45 100%);
+    color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 4px 15px rgba(225, 48, 108, 0.35);
+    z-index: 998;
+    transition: var(--transition);
+}
+
+.floating-instagram:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(225, 48, 108, 0.45);
+}
+
 /* HERO SECTION */
 .hero {
     padding: 190px 0 80px;
@@ -325,6 +348,7 @@ img {
     font-size: 3.5rem;
     line-height: 1.1;
     margin-bottom: 24px;
+    font-weight: 800;
 }
 
 .hero-content p {
@@ -414,16 +438,18 @@ img {
     font-size: 2.2rem;
     margin-bottom: 20px;
     color: var(--bordo);
+    font-weight: 800;
 }
 
 .section-subtitle {
     color: var(--bordo);
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 0.95rem;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin-bottom: 10px;
     display: block;
+    font-family: var(--font-body);
 }
 
 .section-subtitle::after {
@@ -496,7 +522,7 @@ img {
     font-size: 1rem;
     color: var(--bordo);
     font-family: var(--font-body);
-    font-weight: 700;
+    font-weight: 800;
 }
 
 /* MENU GALLERY */
@@ -595,6 +621,7 @@ img {
 .cta-section h2 {
     color: #FFFFFF;
     font-size: 2rem;
+    font-weight: 800;
     margin-bottom: 30px;
     max-width: 600px;
     margin-left: auto;
@@ -625,7 +652,7 @@ img {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     color: var(--bordo);
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 15px;
     display: block;
 }
@@ -639,6 +666,7 @@ img {
 .footer h4 {
     color: var(--bordo);
     font-size: 1.1rem;
+    font-weight: 800;
     margin-bottom: 20px;
 }
 
@@ -685,6 +713,7 @@ img {
 .small-hero h1 {
     color: #FFFFFF;
     font-size: 2.5rem;
+    font-weight: 800;
     margin-bottom: 15px;
 }
 
