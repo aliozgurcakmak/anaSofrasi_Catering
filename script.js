@@ -26,6 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.getElementById('mobileMenu');
 
     if (hamburgerBtn && mobileMenu) {
+        const closeMobileMenu = () => {
+            mobileMenu.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            const icon = hamburgerBtn.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        };
+
         hamburgerBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('active');
             // Toggle Icon between bars and times
@@ -33,20 +41,37 @@ document.addEventListener('DOMContentLoaded', () => {
             if (mobileMenu.classList.contains('active')) {
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-times');
+                document.body.classList.add('menu-open');
             } else {
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
+                document.body.classList.remove('menu-open');
             }
         });
 
         // Close mobile menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!mobileMenu.contains(e.target) && !hamburgerBtn.contains(e.target) && mobileMenu.classList.contains('active')) {
-                mobileMenu.classList.remove('active');
-                const icon = hamburgerBtn.querySelector('i');
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
+                closeMobileMenu();
             }
+        });
+
+        // Close the panel after choosing any mobile-menu link.
+        mobileMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', (e) => {
+                const targetPath = new URL(link.href, window.location.href).pathname;
+                const currentPath = window.location.pathname;
+                const isCurrentHomeLink =
+                    (targetPath.endsWith('/index.html') || targetPath.endsWith('/')) &&
+                    (currentPath.endsWith('/index.html') || currentPath.endsWith('/'));
+
+                closeMobileMenu();
+
+                if (isCurrentHomeLink) {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
         });
     }
 
